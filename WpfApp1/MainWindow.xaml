@@ -1,0 +1,42 @@
+﻿<Window
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApp1"
+        xmlns:telerik="http://schemas.telerik.com/2008/xaml/presentation" 
+        x:Class="WpfApp1.MainWindow"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="350" Width="500" ResizeMode="CanMinimize">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <StackPanel Orientation="Horizontal" Grid.Row="0" HorizontalAlignment="Center">
+            <WrapPanel>
+                <Image Source="https://i.pinimg.com/originals/df/83/70/df8370f1292163c519d35ad66746eefa.png" Width="80" />
+                <telerik:Label FontSize="35">
+                    Sign in or Sign up </telerik:Label>
+            </WrapPanel>
+            
+        </StackPanel>
+        <StackPanel Grid.Row="1" Orientation="Vertical" VerticalAlignment="Center" HorizontalAlignment="Center">
+            <telerik:Label  FontSize="10" HorizontalAlignment="Center" Margin="0,15,295,5">Email</telerik:Label>
+            <telerik:RadWatermarkTextBox      x:Name="emailTextBox" Width="350" Height="22"></telerik:RadWatermarkTextBox>
+        </StackPanel>
+        <StackPanel Grid.Row="2" Orientation="Vertical" VerticalAlignment="Center" HorizontalAlignment="Center">
+            <telerik:Label FontSize="10" HorizontalAlignment="Center" Margin="0,15,299,5">Password</telerik:Label>
+            <telerik:RadPasswordBox Name="passTextBox" Width="350"></telerik:RadPasswordBox>
+        </StackPanel>
+        <StackPanel Grid.Row="3" Orientation="Horizontal" HorizontalAlignment="Center" VerticalAlignment="Center">
+            <telerik:RadButton x:Name="signinBtn" FontSize="25" Margin="0,0,20,0" Background="LightGreen" Foreground="White" FontWeight="Bold" Click="signinBtn_Click" >Sign in</telerik:RadButton>
+            <telerik:RadButton x:Name="signUpBtn" FontSize="25" Background="Salmon" Foreground="White" FontWeight="Bold" Click="signUpBtn_Click">Sign up</telerik:RadButton>
+        </StackPanel>
+
+
+
+    </Grid>
+</Window>

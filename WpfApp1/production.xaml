@@ -1,0 +1,45 @@
+﻿<Window x:Class="WpfApp1.production"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApp1"
+        xmlns:telerik="http://schemas.telerik.com/2008/xaml/presentation"
+        mc:Ignorable="d"
+        Title="production" Height="450" Width="800">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="auto"/>
+        </Grid.RowDefinitions>
+
+
+        <telerik:Label Grid.Row="0" FontSize="40" HorizontalContentAlignment="Center">პროდუქციის დამატება</telerik:Label>
+
+        <StackPanel Grid.Row="1" Orientation="Vertical" VerticalAlignment="Center" HorizontalAlignment="Center">
+            <telerik:Label FontSize="10" HorizontalAlignment="Center" Margin="0,15,295,5">კოდი</telerik:Label>
+            <telerik:CurrentPageTextBox Name="prodCodeTextBox" Width="350"></telerik:CurrentPageTextBox>
+        </StackPanel>
+        <StackPanel Grid.Row="2" Orientation="Vertical" VerticalAlignment="Center" HorizontalAlignment="Center">
+            <telerik:Label FontSize="10" HorizontalAlignment="Center" Margin="0,15,295,5">დასახელაბა</telerik:Label>
+            <telerik:CurrentPageTextBox x:Name="prodNameTextBox" Width="350"></telerik:CurrentPageTextBox>
+        </StackPanel>
+        <StackPanel Grid.Row="3" Orientation="Vertical" VerticalAlignment="Center" HorizontalAlignment="Center">
+            <telerik:Label FontSize="10" HorizontalAlignment="Center" Margin="0,15,299,5">ერთეული</telerik:Label>
+            <telerik:CurrentPageTextBox Name="prodQuantityTextBox" Width="350"></telerik:CurrentPageTextBox>
+        </StackPanel>
+        <StackPanel Grid.Row="4" Orientation="Vertical" VerticalAlignment="Center" HorizontalAlignment="Center">
+            <telerik:Label FontSize="10" HorizontalAlignment="Center" Margin="0,15,299,5">ბრენდი</telerik:Label>
+            <telerik:CurrentPageTextBox x:Name="prodBrandTextBox" Width="350" ></telerik:CurrentPageTextBox>
+        </StackPanel>
+        <StackPanel Grid.Row="5" Orientation="Horizontal" VerticalAlignment="Center" HorizontalAlignment="Center" Margin="50">
+            <telerik:RadButton x:Name="addBtn" Width="150" Margin="0,0,25,0" Click="addBtn_Click" >დამატება</telerik:RadButton>
+            <telerik:RadButton x:Name="showGoodsBtn" Width="250"   >დამატებული საქონლის ნახვა</telerik:RadButton>
+        </StackPanel>
+
+    </Grid>
+</Window>
