@@ -52,5 +52,13 @@ namespace WpfApp1
             }
             else MessageBox.Show("Please fill all Field");
         }
+
+        private void showGoodsBtn_Click(object sender, RoutedEventArgs e)
+        {
+            var addedProdWin = new AddedProduction();
+            
+            addedProdWin.Show();
+
+        }
     }
 }

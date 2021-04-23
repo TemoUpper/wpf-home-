@@ -38,7 +38,7 @@
         </StackPanel>
         <StackPanel Grid.Row="5" Orientation="Horizontal" VerticalAlignment="Center" HorizontalAlignment="Center" Margin="50">
             <telerik:RadButton x:Name="addBtn" Width="150" Margin="0,0,25,0" Click="addBtn_Click" >დამატება</telerik:RadButton>
-            <telerik:RadButton x:Name="showGoodsBtn" Width="250"   >დამატებული საქონლის ნახვა</telerik:RadButton>
+            <telerik:RadButton x:Name="showGoodsBtn" Width="250" Click="showGoodsBtn_Click">დამატებული საქონლის ნახვა</telerik:RadButton>
         </StackPanel>
 
     </Grid>

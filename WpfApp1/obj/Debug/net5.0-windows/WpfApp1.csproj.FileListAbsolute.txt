@@ -118,3 +118,5 @@ D:\Visual studio\WpfApp1\WpfApp1\bin\Debug\net5.0-windows\runtimes\unix\lib\netc
 D:\Visual studio\WpfApp1\WpfApp1\bin\Debug\net5.0-windows\runtimes\win\lib\netcoreapp2.1\System.Data.SqlClient.dll
 D:\Visual studio\WpfApp1\WpfApp1\obj\Debug\net5.0-windows\production.g.cs
 D:\Visual studio\WpfApp1\WpfApp1\obj\Debug\net5.0-windows\production.baml
+D:\Visual studio\WpfApp1\WpfApp1\obj\Debug\net5.0-windows\AddedProduction.g.cs
+D:\Visual studio\WpfApp1\WpfApp1\obj\Debug\net5.0-windows\AddedProduction.baml
